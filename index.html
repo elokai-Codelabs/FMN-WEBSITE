@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FMN</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="">
+      <header
+        class="flex justify-between items-center bg-white py-4 px-6 lg:px-12"
+      >
+        <img src="img/logo.jpeg" alt="logo" class="w-20" />
+        <nav class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 cursor-pointer lg:hidden"
+            id="burger"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <ul class="hidden lg:flex text-xl">
+            <li class="mx-4 lg:mx-8"><a href="#home">Home</a></li>
+            <li class="mx-4 lg:mx-8"><a href="#about">About</a></li>
+            <li class="mx-4 lg:mx-8"><a href="#product">Products</a></li>
+            <li class="mx-4 lg:mx-8"><a href="#team">Team</a></li>
+            <li class="mx-4 lg:mx-8"><a href="#review">Reviews</a></li>
+            <li class="mx-4 lg:mx-8"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="relative" id="home">
+        <div class="absolute">
+          <p class="text-gray-600 text-[26px] py-16 px-2 sm:hidden">
+            <span class="block">Choose organic </span>
+            <span>choose better</span>
+          </p>
+          <div
+            class="hidden lg:block md:block max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 w-[550px] ml-7"
+          >
+            <p class="text-gray-500 text-[40px]">
+              Choose organic choose better
+            </p>
+            <p class="mt-5">
+              NADESKA VENTURES is an indigenous Ghanaian company specializing in
+              personal care products and household detergents with the brand
+              name FMN NATURALS. Our product range includes shea soufflé, black
+              soap gel and a citrus multipurpose wash.
+            </p>
+            <button
+              class="p-4 mt-6 text-[25px] rounded-md bg-[#FC5A25] text-white flex items-center"
+            >
+              Read More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="lg:h-[650px] h-[250px] bg-no-repeat bg-cover bg-center"
+          style="background-image: url('img/banner.svg')"
+        ></div>
+      </section>
+
+      <div class="mt-14 mb-8 p-4 sm:p-10">
+        <p class="text-center text-3xl font-poppins relative">
+          Message from CEO
+          <span
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-12 bg-mainred"
+          ></span>
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-14 w-full">
+          <div class="sm:pl-20 p-8">
+            <div class="relative">
+              <div class="w-52 h-52 rounded-sm bg-[#FC5A25]"></div>
+              <div
+                class="absolute rounded-sm top-20 left-20 bg-[url('img/image1.png')] bg-cover bg-center w-52 h-52"
+              ></div>
+            </div>
+          </div>
+          <div class="p-8">
+            <p class="font-poppins font-semibold text-lg sm:text-2xl">
+              Fidaus Mohammed
+            </p>
+            <div class="text-sm sm:text-base mt-4">
+              <p>
+                Our Mission is to offer a wide range of well-formulated skincare
+                products and household detergents at affordable prices to allow
+                as many people as possible to be able to afford them.
+              </p>
+              <p>
+                TO BECOME THE GLOBALLY PREFERRED SKINCARE AND HOME DETERGENTS
+                BRAND.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card start -->
+      <section class="lg:mx-20" id="about">
+        <h1 class="text-4xl flex justify-center my-4 relative">
+          <span
+            class="bg-gray-300 h-0.5 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12"
+            style="background-color: #d2b805"
+          ></span>
+          <span class="px-4 mt-4 mb-3">About Us</span>
+        </h1>
+
+        <div class="grid lg:grid-cols-3 gap-10 mx-8">
+          <!-- 1st card -->
+          <div class="flex items-center justify-center">
+            <div
+              class="bg-white rounded overflow-hidden shadow-md mb-10 w-70 h-60 m-4"
+            >
+              <div class="flex justify-center py-3 px-2">
+                <div
+                  class="bg-gradient-to-r from-red-100 to-red-200 py-2 px-3 rounded mt-3"
+                >
+                  <img src="img/mision.svg" alt="" class="w-10" />
+                </div>
+              </div>
+              <h1 class="text-2xl flex justify-center py-2 px-2">Mission</h1>
+              <p class="text-[16px] flex justify-center py-3 px-8 mb-8">
+                To offer a wide range of skincare products and household
+                detergents at affordable prices
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd -->
+          <div class="flex items-center justify-center">
+            <div
+              class="bg-white rounded overflow-hidden shadow-md mb-10 w-70 h-60 m-4"
+            >
+              <div class="flex justify-center py-2 px-2">
+                <div
+                  class="bg-gradient-to-r from-green-100 to-green-200 p-2 rounded mt-3"
+                >
+                  <img src="img/vision.svg" alt="" class="w-10" />
+                </div>
+              </div>
+              <h1 class="text-2xl flex justify-center py-2 px-2">Vision</h1>
+              <p class="text-[16px] flex justify-center py-3 px-8 mb-8">
+                to become the globally preferred skincare and home detergents
+                brand.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3rd -->
+          <div class="flex items-center justify-center">
+            <div
+              class="bg-white rounded overflow-hidden shadow-md mb-10 w-70 h-60 m-4"
+            >
+              <div class="flex justify-center py-2 px-2">
+                <div
+                  class="bg-gradient-to-r from-yellow-200 to-yellow-400 p-2 rounded mt-3"
+                >
+                  <img src="img/corevales.svg" alt="" class="w-10" />
+                </div>
+              </div>
+              <h1 class="text-2xl flex justify-center py-2 px-2">
+                Core Values
+              </h1>
+              <p class="text-[16px] flex justify-center py-3 px-8 mb-8">
+                to become the globally preferred skincare and home detergents
+                brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card end -->
+
+      <section class="sm:mx-20">
+        <h1 class="text-4xl flex justify-center my-4 relative">
+          <span
+            class="bg-gray-300 h-0.5 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12"
+            style="background-color: #d2b805"
+          ></span>
+          <span class="px-4 mt-4 mb-6">What we do</span>
+        </h1>
+        <br /><br />
+        <div class="grid sm:grid-cols-2 gap-10">
+          <!-- left start-->
+          <div class="mx-10 relative">
+            <div>
+              <img
+                src="img/product1.png"
+                alt="product1"
+                class="w-[350px] relative"
+              />
+            </div>
+            <!--  -->
+            <div
+              class="w-52 h-42 bg-[#FFFBF9] text-sm p-4 shadow-lg absolute bottom-0 left-36 sm:bottom-[-10px] sm:left-60"
+            >
+              <p>One great formula works for all skin types</p>
+              <div class="flex mt-4">
+                <img
+                  src="img/ellipse.png"
+                  alt="ellipse"
+                  class="mr-3 w-10 h-10"
+                />
+                <div>
+                  <p>CEO</p>
+                  <p>fmn Natural</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- left end-->
+          <!-- right start-->
+          <div>
+            <p class="px-8">
+              NADESKA VENTURES is an indigenous Ghanaian company specializing in
+              personal care products and household detergents with the brand
+              name FMN NATURALS. Our product range includes shea soufflé, black
+              soap gel and a citrus multipurpose wash. All our products are
+              crafted to captivate the senses and make a lasting impression on
+              its users. You will not forget how good FMN NATURALS makes you
+              feel every time you use them. FMN - Forget Me Not!
+            </p>
+            <p class="px-8">
+              To offer a wide range of well-formulated skincare products and
+              household detergents at affordable prices to allow as many people
+              as possible to be able to afford them.
+            </p>
+            <br />
+            <button
+              class="p-2 mx-8 my-12 mt-12 text-[25px] rounded-md bg-[#FC5A25] text-white flex items-center"
+            >
+              Read More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sm:mx-20" id="product">
+        <h1 class="text-4xl flex justify-center mt-32 mb-24 relative">
+          <span
+            class="bg-gray-300 h-0.5 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12"
+            style="background-color: #d2b805"
+          ></span>
+          <span class="px-4 mt-2 mb-3">Discover Our Products </span>
+        </h1>
+        <div class="mt-8 grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-6">
+          <!-- card1  start -->
+          <!-- adding @apply function to create reusable code. check src>styles -->
+          <div
+            class="bg-white rounded overflow-hidden shadow-md mb-10 relative hover:shadow-lg mx-6"
+          >
+            <img
+              src="img/product1.png"
+              alt="product1"
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold">Glow Shower gel</span>
+              <span class="block text-gray-500 text-sm">GHC50</span>
+            </div>
+            <!-- batch start -->
+            <div
+              class="bg-gray-200 text-gray-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 mr-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
+              <span>Available </span>
+            </div>
+            <!-- batch ends -->
+          </div>
+          <!-- card1 ends -->
+
+          <!-- card2 start -->
+          <div
+            class="bg-white rounded overflow-hidden shadow-md mb-10 relative hover:shadow-lg mx-6"
+          >
+            <img
+              src="img/product.png"
+              alt="product2"
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold">Shea body butter</span>
+              <span class="block text-gray-500 text-sm">GHC100</span>
+            </div>
+            <!-- batch start -->
+            <div
+              class="bg-gray-200 text-gray-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 mr-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Available </span>
+            </div>
+            <!-- batch ends -->
+          </div>
+          <!-- card2 ends -->
+
+          <!-- card3 start -->
+          <div
+            class="bg-white rounded overflow-hidden shadow-md mb-10 relative hover:shadow-lg mx-6"
+          >
+            <img
+              src="img/product1.png"
+              alt="product3"
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold">Super Clean wash</span>
+              <span class="block text-gray-500 text-sm">GHC80</span>
+            </div>
+            <!-- batch start -->
+            <div
+              class="bg-gray-200 text-gray-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2 flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 mr-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Available </span>
+            </div>
+            <!-- batch ends -->
+          </div>
+          <!-- card3 ends -->
+        </div>
+      </section>
+
+      <!--  our team-->
+      <section id="team" class="mb-16 p-4 sm:p-14 sm:mx-20">
+        <h1 class="text-4xl flex justify-center my-4 relative mb-16">
+          <span
+            class="bg-[#d2b805] h-0.5 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12"
+          ></span>
+          <span class="px-4 mt-4 mb-3">Meet our Team</span>
+        </h1>
+
+        <div class="flex flex-col sm:flex-row justify-around sm:mx-20">
+          <div class="flex flex-col items-center mb-16 sm:mb-0">
+            <div class="relative w-44 h-44 sm:w-56 sm:h-56 mb-4">
+              <div class="w-full h-full rounded-sm bg-[#FC5A25]"></div>
+              <div
+                class="absolute rounded-sm top-16 left-12 bg-[url('img/team1.png')] bg-cover bg-center w-full h-full"
+              ></div>
+            </div>
+            <div class="w-64 mt-20 sm:ml-40">
+              <p
+                class="ml-2 sm:ml-0 font-normal text-2xl text-center sm:text-left"
+              >
+                Mike Sam
+              </p>
+              <span class="ml-20 lg:ml-0 text-sm mt-2 text-center sm:text-left"
+                >Organic Skincare Expert</span
+              >
+              <div class="flex justify-center sm:justify-start mt-2 sm:mt-4">
+                <img src="img/ig.png" alt="ig" class="w-5 h-5" />
+                <img
+                  src="img/whatsapp.png"
+                  alt="whatsapp"
+                  class="w-5 h-5 ml-2"
+                />
+                <img src="img/twitter.png" alt="twitter" class="w-5 h-5 ml-2" />
+                <img
+                  src="img/facebook.png"
+                  alt="facebook"
+                  class="w-5 h-5 ml-2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center mb-16 sm:mb-0">
+            <div class="relative w-44 h-44 sm:w-56 sm:h-56 mb-4">
+              <div class="w-full h-full rounded-sm bg-[#FC5A25]"></div>
+              <div
+                class="absolute rounded-sm top-16 left-12 bg-[url('img/team2.png')] bg-cover bg-center w-full h-full"
+              ></div>
+            </div>
+            <div class="w-64 mt-20 sm:ml-40">
+              <p
+                class="ml-2 sm:ml-0 font-normal text-2xl text-center sm:text-left"
+              >
+                Linda Carole
+              </p>
+              <span
+                class="ml-20 lg:ml-0 sm:ml-0 text-sm mt-2 text-center sm:text-left"
+                >Organic Skincare Expert</span
+              >
+              <div class="flex justify-center sm:justify-start mt-2 sm:mt-4">
+                <img src="img/ig.png" alt="ig" class="w-5 h-5" />
+                <img
+                  src="img/whatsapp.png"
+                  alt="whatsapp"
+                  class="w-5 h-5 ml-2"
+                />
+                <img src="img/twitter.png" alt="twitter" class="w-5 h-5 ml-2" />
+                <img
+                  src="img/facebook.png"
+                  alt="facebook"
+                  class="w-5 h-5 ml-2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center mb-16 sm:mb-0">
+            <div class="relative w-44 h-44 sm:w-56 sm:h-56 mb-4">
+              <div class="w-full h-full rounded-sm bg-[#FC5A25]"></div>
+              <div
+                class="absolute rounded-sm top-16 left-12 bg-[url('img/team3.png')] bg-cover bg-center w-full h-full"
+              ></div>
+            </div>
+            <div class="w-64 mt-20 sm:ml-40">
+              <p
+                class="ml-2 sm:ml-0 font-normal text-2xl text-center sm:text-left"
+              >
+                Bervely
+              </p>
+              <span
+                class="ml-20 lg:ml-0 sm:ml-0 text-sm mt-2 text-center sm:text-left"
+                >Organic Skincare Expert</span
+              >
+              <div class="flex justify-center sm:justify-start mt-2 sm:mt-4">
+                <img src="img/ig.png" alt="ig" class="w-5 h-5" />
+                <img
+                  src="img/whatsapp.png"
+                  alt="whatsapp"
+                  class="w-5 h-5 ml-2"
+                />
+                <img src="img/twitter.png" alt="twitter" class="w-5 h-5 ml-2" />
+                <img
+                  src="img/facebook.png"
+                  alt="facebook"
+                  class="w-5 h-5 ml-2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="review" class="sm:mx-20">
+        <h1 class="text-4xl flex justify-center my-4 relative">
+          <span
+            class="bg-gray-300 h-0.5 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12"
+            style="background-color: #d2b805"
+          ></span>
+          <span class="px-4 mt-4 mb-3 ml-24 lg:ml-0"
+            >Reviews From Customers</span
+          >
+        </h1>
+
+        <div class="grid lg:grid-cols-3 gap-10 mx-8">
+          <!-- 1st card -->
+          <div class="flex items-center justify-center">
+            <div
+              class="bg-white rounded overflow-hidden shadow-md mb-10 w-70 h-60 m-4"
+            >
+              <div class="flex justify-center py-3 px-2">
+                <img src="img/ellipse.png" alt="" class="w-16 rounded" />
+              </div>
+              <h1 class="text-xl flex justify-center py-2 px-2">Mike Sam</h1>
+              <p class="text-[16px] flex justify-center py-3 px-8 mb-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, aliquam aut blanditiis
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd -->
+          <div class="flex items-center justify-center">
+            <div
+              class="bg-white rounded overflow-hidden shadow-md mb-10 w-70 h-60 m-4"
+            >
+              <div class="flex justify-center py-3 px-2">
+                <img src="img/ellipse.png" alt="" class="w-16 rounded" />
+              </div>
+              <h1 class="text-xl flex justify-center py-2 px-2">Vision</h1>
+              <p class="text-[16px] flex justify-center py-3 px-8 mb-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, aliquam aut blanditiis
+              </p>
+            </div>
+          </div>
+
+          <!-- 3rd -->
+          <div class="flex items-center justify-center">
+            <div
+              class="bg-white rounded overflow-hidden shadow-md mb-10 w-70 h-60 m-4"
+            >
+              <div class="flex justify-center py-3 px-2">
+                <img src="img/ellipse.png" alt="" class="w-16 rounded" />
+              </div>
+              <h1 class="text-xl flex justify-center py-2 px-2">Core Values</h1>
+              <p class="text-[16px] flex justify-center py-3 px-8 mb-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, aliquam aut blanditiis
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        id="contact"
+        class="bottom-0 left-0 w-full bg-[#2D2D2D] h-[530px] text-white"
+      >
+        <div class="mx-auto px-4">
+          <div class="items-center flex flex-col py-4 justify-center">
+            <img
+              src="img/logo.jpeg"
+              alt="Logo"
+              class="w-20 md:w-24 h-20 md:h-24 mb-4 mt-8"
+            />
+            <div class="flex space-x-3">
+              <img src="img/ig.png" alt="ig" class="w-4 md:w-5 h-4 md:h-5" />
+              <img
+                src="img/whatsapp.png"
+                alt="whatsapp"
+                class="w-4 md:w-5 h-4 md:h-5"
+              />
+              <img
+                src="img/twitter.png"
+                alt="twitter"
+                class="w-4 md:w-5 h-4 md:h-5"
+              />
+              <img
+                src="img/facebook.png"
+                alt="facebook"
+                class="w-4 md:w-5 h-4 md:h-5"
+              />
+            </div>
+            <p class="mt-4 md:mt-12">Call us on</p>
+            <p class="mb-4">0243177200 0546265588</p>
+          </div>
+
+          <div class="flex justify-center items-center my-4 mt-20 md:mt-40">
+            <hr
+              class="border-gray-500 hidden lg:block border-1 w-full md:w-[460px] lg:w-[460px]"
+            />
+            <p class="px-2 md:px-5 text-center lg:text-justify">
+              &copy;2023 FMN naturlas All rights reserved | All Rights Reserved
+            </p>
+            <hr
+              class="border-gray-500 hidden lg:block border-1 w-full md:w-[460px] lg:w-[460px]"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
