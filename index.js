@@ -1,20 +1,13 @@
-const menu = document.querySelector("#burger");
-const nav = document.querySelector("nav ul");
-
-menu.addEventListener("click", () => {
-  nav.classList.toggle("hidden");
-  menu.classList.toggle("hidden");
-});
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 1024) {
-    nav.classList.remove("hidden");
-    menu.classList.add("hidden");
-  } else {
-    nav.classList.add("hidden");
-    menu.classList.remove("hidden");
-  }
-});
+function Menu(e) {
+  let list = document.querySelector("ul");
+  e.name === "menu"
+    ? ((e.name = "close"),
+      list.classList.add("top-[80px]"),
+      list.classList.add("opacity-100"))
+    : ((e.name = "menu"),
+      list.classList.remove("top-[80px]"),
+      list.classList.remove("opacity-100"));
+}
 
 // Smooth scrolling effect
 $('a[href*="#"]').on("click", function (e) {

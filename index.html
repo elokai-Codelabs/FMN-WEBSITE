@@ -6,40 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>FMN</title>
   </head>
   <body class="bg-gray-100">
     <div class="">
-      <header
-        class="flex justify-between items-center bg-white py-4 px-6 lg:px-12"
+      <nav
+        class="p-5 bg-white shadow md:flex md:items-center md:justify-between"
       >
-        <img src="img/logo.jpeg" alt="logo" class="w-20" />
-        <nav class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 cursor-pointer lg:hidden"
-            id="burger"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-          <ul class="hidden lg:flex text-xl">
-            <li class="mx-4 lg:mx-8"><a href="#home">Home</a></li>
-            <li class="mx-4 lg:mx-8"><a href="#about">About</a></li>
-            <li class="mx-4 lg:mx-8"><a href="#product">Products</a></li>
-            <li class="mx-4 lg:mx-8"><a href="#team">Team</a></li>
-            <li class="mx-4 lg:mx-8"><a href="#review">Reviews</a></li>
-            <li class="mx-4 lg:mx-8"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+        <div class="flex justify-between items-center">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline" src="img/logo.jpeg" />
+            <span class="font-poppins font-semibold text-lg sm:text-2xl"
+              >FMN</span
+            >
+          </span>
+
+          <span class="text-3xl cursor-pointer mx-2 md:hidden z-10 block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+
+        <ul
+          class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#home" class="text-xl hover:text-cyan-500 duration-500"
+              >Home</a
+            >
+          </li>
+
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#about" class="text-xl hover:text-cyan-500 duration-500"
+              >About</a
+            >
+          </li>
+
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#product" class="text-xl hover:text-cyan-500 duration-500"
+              >Products</a
+            >
+          </li>
+
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#team" class="text-xl hover:text-cyan-500 duration-500"
+              >Team</a
+            >
+          </li>
+
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#review" class="text-xl hover:text-cyan-500 duration-500"
+              >Reviews</a
+            >
+          </li>
+
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#contact" class="text-xl hover:text-cyan-500 duration-500"
+              >Contact</a
+            >
+          </li>
+
+          <!-- for menu -->
+          <h2 class=""></h2>
+        </ul>
+      </nav>
 
       <section class="relative" id="home">
         <div class="absolute">
