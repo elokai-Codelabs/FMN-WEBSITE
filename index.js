@@ -21,3 +21,5 @@ $('a[href*="#"]').on("click", function (e) {
     "easeInOutCubic"
   );
 });
+
+// flex item-center gap-x-[20px]
