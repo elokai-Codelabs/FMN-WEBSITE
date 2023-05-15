@@ -11,3 +11,14 @@
 .animated-trans-right {
   animation: trans-right 1.5s ease-in-out infinite;
 }
+
+#preloader {
+  background: #fff
+    url(https://thumbs.gfycat.com/HugeDeliciousArchaeocete-max-1mb.gif)
+    no-repeat center center;
+  background-size: 60%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

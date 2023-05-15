@@ -1,3 +1,4 @@
+// MENU BAR
 function Menu(e) {
   let list = document.querySelector("ul");
   e.name === "menu"
@@ -9,17 +10,8 @@ function Menu(e) {
       list.classList.remove("opacity-100"));
 }
 
-// Smooth scrolling effect
-$('a[href*="#"]').on("click", function (e) {
-  e.preventDefault();
-
-  $("html, body").animate(
-    {
-      scrollTop: $($(this).attr("href")).offset().top,
-    },
-    1000,
-    "easeInOutCubic"
-  );
+// Preloader
+const loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
 });
-
-// flex item-center gap-x-[20px]
